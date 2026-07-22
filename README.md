@@ -2,54 +2,59 @@
 
 ---
 
-# PM 自适应技能包
+# PM Adaptive Skills
 
-**每个技能，都 能自适应你的场景。**
+> PM 自适应技能包 — 根据行业/阶段/规模自动调整分析框架
 
-pm-skills 给� ��了一套固定模板——不管你做 Saa S 还是电商，出来的东西都一样。
- 这里不一样：**输入你的行业、阶� ��、团队规模，技能自动调整分析� ��架和输出粒度。**
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Erich956389473/pm-adaptive-skills)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 和 pm-skills � ��区别
+## ✨ 功能特性
 
-| | pm-skills | PM 自适应技能� �� |
-|---|---|---|
-| **框架选择** | 固� �模板（所有人一样） | **根据行业 /阶段动态选择** |
-| **输出粒度** |  固定长度 | **根据公司规模调整（� ��创1页 / 大型完整报告）** |
-| **指 标推荐** | 通用指标 | **根据行业� �荐核心指标（SaaS看ARR，电商看GMV� ��** |
-| **角色适配** | 只面向通用 P M | **区分数据PM/增长PM/策略PM** |
-|  **语言** | 英文 | **中文** |
-| **格式 ** | Claude 命令 + 技能 | **纯 Skill Mar kdown，任何 Agent 可用** |
+- **竞品分析** — 自适应竞品分析框架
+- **数据分析** — 根据数据量级调整方法
+- **用户画像** — 行业相关的用户画像模板
+- **优先级排序** — 阶段适配的优先级框架
+- **路线图** — 规模适配的产品路线图
 
-## 技能列 表
+## 🚀 快速开始
 
-| 技能 | 自适应维度 | 适用场� � |
-|------|-----------|---------|
-| **compet itive-analysis** | 7行业×3规模×4阶段  → 不同分析框架 | 分析竞品格局 | 
-| **data-analysis** | 4角色×7行业×3阶 段 → 不同指标体系 | 做数据分析� ��策 |
-| **user-persona** | B2B/B2C/B2B2C×3 规模 → 不同画像维度 | 建立用户� ��像 |
-| **prioritize** | 4阶段×3规模 � �� 不同优先级模型 | 需求排期 |
-| * *roadmap** | 4阶段×3规模 → 不同时� �粒度 | 编制产品路线图 |
+### 作为 Agent Skill 使用
 
-## 怎么� ��
+`
+pm-adaptive-skills
+  skill: competitive-analysis
+  industry: 电商
+  stage: 成长期
+  scale: 中型
+`
 
-**在任何支持 Skill 的 AI Agent 中� ��用（Claude Code / Kimi CLI / Cursor / Cod ex）：**
+### 可用技能
 
-```
-告诉我你要分析的产� �场景（行业、阶段、团队规模）� �
-然后我自动调用最合适的技能。
- 
-例如：
-"我是 SaaS 公司增长期 PM， 想分析竞品"
-→ 自动调 competitive-an alysis（SaaS版 + 增长期粒度）
+| 技能 | 说明 |
+|------|------|
+| competitive-analysis | 竞品分析 |
+| data-analysis | 数据分析 |
+| user-persona | 用户画像 |
+| prioritization | 优先级排序 |
+| oadmap | 产品路线图 |
 
-"我� �数据PM，刚接手一个电商产品"
-→  自动调 data-analysis（数据PM版 + 电� �指标）
-```
+## 📖 自适应维度
 
-## 设计原则
+- **行业** — 电商、SaaS、金融、教育等
+- **阶段** — 种子期、成长期、成熟期
+- **规模** — 小型、中型、大型
 
-1. **不是� ��板，是框架选择器** — 分析什么 、怎么分析，由你的场景决定
-2. ** 深度匹配** — B端和C端的竞品、画 像、指标完全不同
-3. **输出长度看 人下菜碟** — 初创要快，大厂要� �
-4. **中文优先** — 面向中国 PM
- 
+## 📦 技术栈
+
+- **类型:** Agent Skill (Markdown)
+- **格式:** SKILL.md
+- **兼容:** Claude Code, Cursor, Copilot
+
+## 📄 License
+
+MIT License - 详见 [LICENSE](LICENSE)
+
+---
+
+**Author:** Erich Lee | [GitHub](https://github.com/Erich956389473)
